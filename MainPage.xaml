@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Ch2App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ch2App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="button1" Content="Show a msg"
+                HorizontalAlignment="Center"
+                Click="button1_Click"/>
+
+        <Button x:Name="button2" Content="If/Else"
+                HorizontalAlignment="Center"
+                Click="button2_Click"
+                Grid.Column="1"/>
+
+        <Button x:Name="button3" Content="Conditional test"
+                HorizontalAlignment="Center"
+                Click="button3_Click"
+                Grid.Row="1"/>
+
+        <Button x:Name="button4" Content="A loop"
+                HorizontalAlignment="Center"
+                Click="button4_Click"
+                Grid.Column="1" Grid.Row="1"/>
+
+        <TextBlock x:Name="myLabel"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Grid.Row="2" Grid.RowSpan="2"
+                   Style="{StaticResource BodyTextBlockStyle}"/>
+    </Grid>
+</Page>
